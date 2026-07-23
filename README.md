@@ -5,7 +5,7 @@ Take a piece of writing and turn it into a webpage that actually *tells its stor
 ## Pick a track
 
 - **`fairy-tale/`**: one of Hans Christian Andersen's stories, laid out like a page from an illustrated book. Pick your story from the [Andersen collection](https://www.gutenberg.org/cache/epub/32572/pg32572-images.html).
-- **`newspaper/`**: one page from a historical South Asian newspaper, rebuilt for the web. Browse the [South Asia Open Archives](https://www.jstor.org/site/south-asia-open-archives/saoa/newspapers-34677887/?so=item_title_str_asc).
+- **`newspaper/`**: one page from a historical newspaper rebuilt for the web. Browse the [South Asia Open Archives](https://www.jstor.org/site/south-asia-open-archives/saoa/newspapers-34677887/?so=item_title_str_asc).
 
 Each folder is a self-contained starter with its own `index.html`, `style.css`, and a README that explains what's inside and how far it goes. **Open the folder you picked and read its README first.**
 
