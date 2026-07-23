@@ -1,10 +1,10 @@
 # Fit to `<p>`rint 🗞️
 
-Take a piece of writing and turn it into a webpage that actually *tells its story*, using the layout and typography skills we've been building.
+Take a piece of writing and turn it into a webpage using the layout and typography skills we've been building.
 
 ## Pick a track
 
-- **`fairy-tale/`**: one of Hans Christian Andersen's stories, laid out like a page from an illustrated book. Pick your story from the [Andersen collection](https://www.gutenberg.org/cache/epub/32572/pg32572-images.html).
+- **`fairy-tale/`**: one of Hans Christian Andersen's stories laid out like a page from an illustrated book. Pick your story from the [Andersen collection](https://www.gutenberg.org/cache/epub/32572/pg32572-images.html).
 - **`newspaper/`**: one page from a historical newspaper rebuilt for the web. Browse the [South Asia Open Archives](https://www.jstor.org/site/south-asia-open-archives/saoa/newspapers-34677887/?so=item_title_str_asc).
 
 Each folder is a self-contained starter with its own `index.html`, `style.css`, and a README that explains what's inside and how far it goes. **Open the folder you picked and read its README first.**
@@ -23,12 +23,12 @@ Each folder is a self-contained starter with its own `index.html`, `style.css`, 
 
 ## References
 
-- [Flexbox Froggy](https://flexboxfroggy.com): levels 1 to 13 cover the flexbox you need
+- [Flexbox Froggy](https://flexboxfroggy.com):
 - [A Complete Guide to Flexbox (CSS-Tricks)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [MDN: basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox)
-- [CSS Zen Garden](http://www.csszengarden.com/): one HTML file, endless designs
-- [Jen Simmons' Labs](https://labs.jensimmons.com/): layout experiments worth stealing from
-- [`css-properties.md`](css-properties.md): a quick reference for the properties you'll reach for
+- [CSS Zen Garden](http://www.csszengarden.com/)
+- [Jen Simmons' Labs](https://labs.jensimmons.com/)
+- [`css-properties.md`](css-properties.md)
 
 ## Image pools
 
