@@ -45,18 +45,26 @@ h3 {
   flex-direction: column;
   flex: 1;
   min-width: 0;
+
+.rule {
+    border: none;
+    border-top: 2px solid var(--rule);
+    margin: 14px 0 0;
 }
-.flower-border {
+}
+.flowerheader {
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden;
   padding: 14px 0;
   display: flex;
-  justify-content: center;
 }
 
 .main-flower {
   width: 100%;
-  max-width: 1000px;
   height: auto;
-  display: block;
+  justify-content: center;
+  display: flex;
 }
 /* Column widths: bigger flex value = more room. */
 .wide {
