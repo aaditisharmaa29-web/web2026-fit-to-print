@@ -9,7 +9,7 @@ body {
 p {
   margin: 0 0 10px;
   font-size: 13px;
-  text-align: justify;
+  text-align: justify center;
 }
 
 h1 {
@@ -46,7 +46,18 @@ h3 {
   flex: 1;
   min-width: 0;
 }
+.flower-border {
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+}
 
+.main-flower {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+}
 /* Column widths: bigger flex value = more room. */
 .wide {
   flex: 5;
