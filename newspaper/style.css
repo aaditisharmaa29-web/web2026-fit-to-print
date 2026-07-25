@@ -11,7 +11,8 @@ body {
   overflow-x: hidden;
 
   background-image: url("seamless-bg.png");
-  background-repeat: repeat; 
+  background-repeat: repeat;
+  background-size: 400px 280px;
 }
 
 p {
@@ -52,6 +53,34 @@ h3 {
   flex-direction: column;
   flex: 1;
   min-width: 0;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.corner-flower {
+  width: 90px;
+  max-width: 15%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.masthead-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.masthead {
+  text-align: center;
+  margin: 16px 0;
+  flex: 1;
 }
 
 .flowerheader {
@@ -95,17 +124,6 @@ h3 {
   border: 1px solid;
   padding: 10px;
   margin-bottom: 16px;
-}
-
-.bar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-}
-
-.masthead {
-  text-align: center;
-  margin: 16px 0;
 }
 
 .nameplate {
