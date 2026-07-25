@@ -1,12 +1,16 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --font-body: "EB Garamond", serif;
+  --font-headline: "Oswald", sans-serif;
+  --font-display: "Manufacturing Consent", cursive;
+}
 body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px;
-  font-family: serif;
+  font-family: var(--font-body);
   line-height: 1.4;
   overflow-x: hidden;
 
@@ -15,10 +19,18 @@ body {
   background-size: 400px 280px;
 }
 
+h1.nameplate{
+  font-family: Manufacturing Consent;
+}
+
+h2.nameplate{
+  font-family: EB Garamond;
+}
 p {
   margin: 0 0 10px;
   font-size: 13px;
   text-align: justify-centre;
+  font-family: var(--font-body);
 }
 
 h1 {
@@ -54,14 +66,6 @@ h3 {
   flex: 1;
   min-width: 0;
 }
-
-.bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-size: 12px;
-}
-
 .corner-flower {
   width: 90px;
   max-width: 15%;
@@ -82,6 +86,7 @@ h3 {
   margin: 16px 0;
   flex: 1;
 }
+
 
 .flowerheader {
   width: 100%;
@@ -124,6 +129,17 @@ h3 {
   border: 1px solid;
   padding: 10px;
   margin-bottom: 16px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.masthead {
+  text-align: center;
+  margin: 16px 0;
 }
 
 .nameplate {
@@ -395,4 +411,20 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.nameplate,
+.brand,
+.eyebrow,
+.travel-head,
+.section-title,
+.missing-name,
+.stacked-name,
+h2,
+h3 {
+  font-family: var(--font-headline);
+}
+
+.deck {
+  font-family: var(--font-display);
 }
