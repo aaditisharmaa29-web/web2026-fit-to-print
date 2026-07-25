@@ -1,15 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px;
   font-family: serif;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 p {
   margin: 0 0 10px;
   font-size: 13px;
-  text-align: justify center;
+  text-align: justify;
 }
 
 h1 {
@@ -34,7 +39,6 @@ h3 {
   font-size: 34px;
 }
 
-/* the day's top headline */
 .row {
   display: flex;
   gap: 20px;
@@ -45,16 +49,10 @@ h3 {
   flex-direction: column;
   flex: 1;
   min-width: 0;
+}
 
-.rule {
-    border: none;
-    border-top: 2px solid var(--rule);
-    margin: 14px 0 0;
-}
-}
 .flowerheader {
   width: 100%;
-  max-width: 1100px;
   overflow: hidden;
   padding: 14px 0;
   display: flex;
@@ -63,10 +61,9 @@ h3 {
 .main-flower {
   width: 100%;
   height: auto;
-  justify-content: center;
-  display: flex;
+  display: block;
 }
-/* Column widths: bigger flex value = more room. */
+
 .wide {
   flex: 5;
 }
@@ -130,7 +127,6 @@ h3 {
   text-align: center;
 }
 
-/* Stack the columns on narrow screens */
 @media (max-width: 700px) {
   .row {
     flex-direction: column;
@@ -144,17 +140,109 @@ h3 {
   }
 }
 
+.stud-man {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.reserved-box {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.reserved-box h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 34px;
+  margin: 0;
+}
+
+.bicycle-box {
+  min-height: 500px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bicycle {
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* ---------- AD BOX ---------- */
+
 .ad-box {
-    text-align: center;
-    padding: 10px 44px 22px;
-     width: 300px;
-    height: 350px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  text-align: center;
+  padding: 10px 60px 22px;
+  width: auto;
+  min-height: 380px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bracket {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+
+.bracket-left {
+  left: 0;
+}
+
+.bracket-right {
+  right: 0;
+}
+
+.eyebrow {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 0 0 2px;
+}
+
+.brand {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 34px;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px;
+}
+
+.subrow {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.ad-box .body-text {
+  max-width: 340px;
+  margin: 0 auto 14px;
+  text-align: center;
 }
 
 .bathtub {
@@ -164,6 +252,125 @@ h3 {
 }
 
 .bathtub img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- TRAVEL ROW ---------- */
+
+.travel-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 22px;
+  border-top: 1px solid #000;
+  margin-top: 22px;
+  padding-top: 16px;
+}
+
+.travel-col-1 {
+  border-right: 1px solid #000;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.travel-head {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.lead-small {
+  text-align: center;
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.fleuron {
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.two-col-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+.two-col-text p {
+  font-size: 13.5px;
+  line-height: 1.45;
+  text-align: justify;
+  margin: 0;
+}
+
+/* ---------- MISSING SECTION ---------- */
+
+.section-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 38px;
+  margin: 26px 0 14px;
+  text-align: center;
+}
+
+.missing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  border-top: 1px solid #000;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.missing-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.missing-col-1 {
+  text-align: center;
+}
+
+.missing-col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.missing-col-2 p {
+  font-size: 12.5px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 8px 0 0;
+  max-width: 300px;
+}
+
+.stacked-name {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.stacked-name .the-third {
+  font-size: 0.72em;
+}
+
+.missing-illustration {
+  max-width: 200px;
+  margin: 10px auto 0;
+}
+
+.missing-illustration img {
   width: 100%;
   height: auto;
   display: block;
