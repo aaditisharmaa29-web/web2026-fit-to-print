@@ -9,12 +9,15 @@ body {
   font-family: serif;
   line-height: 1.4;
   overflow-x: hidden;
+
+  background-image: url("seamless-bg.png");
+  background-repeat: repeat; 
 }
 
 p {
   margin: 0 0 10px;
   font-size: 13px;
-  text-align: justify;
+  text-align: justify-centre;
 }
 
 h1 {
